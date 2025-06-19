@@ -1,4 +1,5 @@
 import checkHealthStatus from '../health.js';
+import { describe, test, expect } from '@jest/globals';
 
 describe('checkHealthStatus', () => {
     test('should return "healthy" if health is greater than 50', () => {
