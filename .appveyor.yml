@@ -1,5 +1,5 @@
-image: Ubuntu1804 # образ сборки
-stack: node 22 # окружение
+image: Ubuntu1804
+stack: node 22
 branches: 
   only:
     - main
@@ -8,4 +8,4 @@ install:
   - npm install # команда установки зависимостей
 build: off
 test_script:
-  npm run lint && npm test # скрипт сборки
+  npm run lint && npm test
