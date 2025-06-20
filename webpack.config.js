@@ -11,7 +11,7 @@ export default {
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(path.dirname(new URL(import.meta.url).pathname), 'dist'),
   },
 
   plugins: [
