@@ -11,7 +11,7 @@ export default {
   },
 
   output: {
-    path: path.resolve(path.dirname(new URL(import.meta.url).pathname), 'dist'),
+     path: path.resolve(new URL(import.meta.url).pathname.replace(/^file:\//, ''), 'dist'),
   },
 
   plugins: [
