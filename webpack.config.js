@@ -1,4 +1,4 @@
-import path from 'node:path';
+
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
@@ -8,10 +8,6 @@ export default {
     open: true, 
     compress: true,
     port: 9000
-  },
-
-  output: {
-     path: path.resolve(new URL(import.meta.url).pathname.replace(/^file:\//, ''), 'dist'),
   },
 
   plugins: [
